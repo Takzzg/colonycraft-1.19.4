@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "colonycraft",
+	"version": "${version}",
+	"name": "colonycraft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/colonycraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          	"guidoq.colonycraft.ColonyCraftMod"
+		],
+		"client": [
+			"guidoq.colonycraft.ColonyCraftClient"
+		],
+		"fabric-datagen": [
+			"guidoq.colonycraft.ColonyCraftModDataGenerator"
+		]
+	},
+	"mixins": [
+		"colonycraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
